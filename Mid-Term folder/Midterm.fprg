@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="3/1/2019 11:47:39 AM"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare variables="num" type="Integer"/>
+            <declare variables="name" type="String"/>
+            <output expression="&quot;Input an integer&quot;"/>
+            <input variable="num"/>
+            <output expression="&quot;Input first name&quot;"/>
+            <input variable="name"/>
+            <if expression="num&gt;=0">
+                <then>
+                    <declare variables="x" type="Integer"/>
+                    <for variable="x" start="1" end="num" step="1">
+                        <output expression="name"/>
+                    </for>
+                </then>
+                <else>
+                    <output expression="&quot;Error&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
